@@ -67,7 +67,7 @@ class TemplateApp(App):
             # increment the counter using internal libs and update the gui
             self.counter = ops.add(self.counter, 1)
             self.root.ids.counter_label.text = (
-                f"{'Tic' if self.counter % 2 == 0 else 'Tac'}: {self.counter}"
+                f"{'Stop' if self.counter % 2 == 0 else 'Go'}: {self.counter}"
             )
 
 
